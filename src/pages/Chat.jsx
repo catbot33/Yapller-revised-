@@ -66,7 +66,7 @@ function Chat() {
       <div className="absolute w-[446px] h-[446px] rounded-full opacity-60 bg-[#adaeb3] blur-[250px] right-[-232px] top-[-232px]"></div>
       <div className="absolute w-[446px] h-[446px] rounded-full opacity-60 bg-[#adaeb3] blur-[250px] left-[-232px] bottom-[-232px]"></div>
       <Sidebar />
-      <div className="flex flex-col items-start gap-5 flex-1">
+      <div className="flex flex-col items-start gap-6 flex-1">
         <div className="flex items-center gap-5 self-stretch">
           <Receiver />
           <Sender />
