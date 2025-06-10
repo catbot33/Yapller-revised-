@@ -23,8 +23,10 @@ function Chat() {
 
         // Extract messages from the first user
         if (data.length > 0) {
-          const firstUserMessages = data.find((user) => user.userId === "user123")?.message || [];
+          const firstUserMessages = data.filter((msgObj) => msgObj.userId === "user123").map(msgObj => msgObj.message);
           setMessages(firstUserMessages);
+          console.log("Fetched messages:", firstUserMessages);
+          
         }
       } catch (error) {
         console.error("Error fetching messages:", error);
@@ -74,7 +76,8 @@ function Chat() {
             <div className="flex flex-col gap-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 flex-grow px-2">
               {messages.map((msg, index) => (
                 <ReceiverMsg
-                  content={msg.message}
+                  content={msg}
+                   key={index}
                 />
               ))}
               <SenderMsg />

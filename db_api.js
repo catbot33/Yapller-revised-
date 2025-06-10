@@ -10,7 +10,7 @@ app.use(cors());
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb://localhost:27017/myDatabase", {
+  .connect("mongodb://localhost:27017/MyDatabase", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

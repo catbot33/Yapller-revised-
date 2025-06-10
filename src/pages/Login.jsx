@@ -139,7 +139,7 @@ function Login() {
         </div>
 
         {/* Google sign-in button (UI only, no handler) */}
-        <button onClick={handleGoogleSignIn} className="cursor-pointer flex items-center leading-6 justify-center gap-2 w-full p-3 rounded-2xl border border-[#3B3B3E] bg-[#151516] text-[#F5F5F6] font-['Instrument_Sans'] text-base font-semibold leading-6 hover:bg-[#15151680]">
+        <button onClick={handleGoogleSignIn} className="cursor-pointer flex items-center justify-center gap-2 w-full p-3 rounded-2xl border border-[#3B3B3E] bg-[#151516] text-[#F5F5F6] font-['Instrument_Sans'] text-base font-semibold leading-6 hover:bg-[#15151680]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
